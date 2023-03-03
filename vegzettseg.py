@@ -16,12 +16,12 @@ def eldontes_kiiras(foglalkozasok):
     gyakorisag = Counter(foglalkozasok)
     leggyakoribb = gyakorisag.most_common(3)
     print('Három leggyakoribb foglalkozás: ')
-    print(leggyakoribb[0][0] + ',', leggyakoribb[1][0] + ',', leggyakoribb[2][0] + ',')
+    print(leggyakoribb[0][0], str(round(leggyakoribb[0][1]/len(foglalkozasok)*100, 1))+'%,', leggyakoribb[1][0], str(round(leggyakoribb[1][1]/len(foglalkozasok)*100, 1))+'%,', leggyakoribb[2][0], str(round(leggyakoribb[2][1]/len(foglalkozasok)*100, 1)))
     print('----------------------------------------------------')
     # Három legritkább foglalkozás
     legritkabb = gyakorisag.most_common()[-3:]
     print('Három legritkább foglalkozás: ')
-    print(legritkabb[0][0] + ',', legritkabb[1][0] + ',', legritkabb[2][0] + ',')
+    print(legritkabb[0][0], str(round(legritkabb[0][1]/len(foglalkozasok)*100, 1))+'%,', legritkabb[1][0], str(round(legritkabb[1][1]/len(foglalkozasok)*100, 1))+'%,',legritkabb[2][0], str(round(legritkabb[2][1]/len(foglalkozasok)*100, 1)))
 
 
 def main():
