@@ -20,7 +20,7 @@ def main():
     print('Melyik a három leggyakoribb születési hónap ezen űrhajósok körében?')
     print('----------------------------------------------------------------------')
     honapok = []
-    with open('astronauts_új.csv') as forrasfajl:
+    with open('astronauts.csv') as forrasfajl:
         nagy_lista = forrasfajl.readlines()
     for sor in nagy_lista:
         darabolt = sor.strip().split(',')
