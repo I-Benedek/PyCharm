@@ -9,10 +9,10 @@ def gyakori(honapok):
 
 def kiiras(leggyakoribb, honapok):
     print('A három leggyakoribb születési hónap fordított sorrendben: ')
-    print(leggyakoribb[2][0] + '.hó-', str(round(leggyakoribb[2][1] / len(honapok) * 100, 1)) + '%;  ',
+    print(leggyakoribb[0][0] + '.hó-', str(round(leggyakoribb[0][1] / len(honapok) * 100, 1)) + '%;  ',
           leggyakoribb[1][0] + '.hó-',
-          str(round(leggyakoribb[1][1] / len(honapok) * 100, 1)) + '%;  ', leggyakoribb[0][0] + '.hó-',
-          str(round(leggyakoribb[0][1] / len(honapok) * 100, 1)) + '%;  ')
+          str(round(leggyakoribb[1][1] / len(honapok) * 100, 1)) + '%;  ', leggyakoribb[2][0] + '.hó-',
+          str(round(leggyakoribb[2][1] / len(honapok) * 100, 1)) + '%;  ')
     print('----------------------------------------------------')
 
 
