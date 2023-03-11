@@ -1,1 +1,1 @@
-print('Működik e?')
+print('Működik e ?')
